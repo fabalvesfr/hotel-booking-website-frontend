@@ -243,22 +243,6 @@ header {
   font-size: 22px;
 }
 
-.card {
-  background-color: white;
-  border-radius: 20px;
-  padding: 5px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  width: fit-content;
-}
-
-.card img {
-  object-fit: cover;
-}
-
-.card-title {
-  font-size: 16px;
-}
-
 .euro {
   font-weight: 700;
 }
@@ -286,6 +270,7 @@ header {
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .hebergements h2 {
@@ -299,16 +284,41 @@ header {
 .rangee-dessus,
 .rangee-dessous {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+}
+
+.rangee-dessus a,
+.rangee-dessous a {
+  width: 33%;
+  height: auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  width: 100%;
+  height: 100%;
+}
+
+.card img {
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 124px;
 }
 
 .hebergements .card-content {
-  height: 33%;
+  height: 35%;
   padding: 0 0 10px 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
+}
+
+.afficher-plus {
+  margin-top: 30px;
 }
 
 .afficher-plus a {
@@ -337,12 +347,6 @@ header {
   height: 136px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-}
-
-.hebergements img {
-  width: 243px;
-  height: 124px;
-  border-radius: 20px 20px 0px 0px;
 }
 
 .populaires-cards .card-content {
@@ -393,6 +397,13 @@ header {
 
   .populaires-cards a {
     width: 30%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .populaires-cards .card {
+    height: 100;
+    margin: 0;
   }
 
   .populaires-cards .card-title {
