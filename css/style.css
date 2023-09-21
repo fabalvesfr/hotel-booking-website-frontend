@@ -219,6 +219,7 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 .info-icon {
@@ -419,8 +420,14 @@ header {
 @media (max-width: 767.98px) {
   .main-container {
     min-width: 320px;
+    padding: 0;
   }
 
+  header,
+  .form-recherche,
+  .filtres {
+    padding: 0 50px;
+  }
   header {
     flex-direction: column;
     align-items: center;
@@ -445,7 +452,8 @@ header {
     margin-bottom: 10px;
   }
 
-  /* SEARCH BAR STYLING */
+  /* FILTRES */
+
   #submit-button-text {
     display: none;
   }
@@ -453,5 +461,28 @@ header {
   .submit-button-icon {
     display: inline-block;
   }
+
+  /* ------------------ */
+
+  /* HEBERGEMENTS ET POPULAIRES */
+
+  .hebergements-and-populaires section {
+    border-radius: 0;
+  }
+
+  .rangee-dessus,
+  .rangee-dessous {
+    flex-direction: column;
+  }
+
+  .rangee-dessus a,
+  .rangee-dessous a {
+    width: 100%;
+  }
+
+  .card img {
+    object-fit: cover;
+  }
+
   /* ------------------ */
 }
