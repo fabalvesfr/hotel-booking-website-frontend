@@ -39,7 +39,7 @@
       </header>
       <main>
         <!-- TODO: le form doit faire toute la largeur (en mobile) -->
-        <div class="form-recherche">
+        <section class="recherche">
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
           <p>En plein centre-ville ou en pleine nature.</p>
           <div class="form-recherche">
@@ -61,8 +61,8 @@
               </div>
             </form>
           </div>
-        </div>
-        <div class="filtres">
+        </section>
+        <section class="filtres">
           <h2>Filtres</h2>
           <div class="tous-les-filtres">
             <div class="economique groupe-filtre">
@@ -92,7 +92,8 @@
               Plus de 500 logements sont disponibles dans cette ville
             </p>
           </div>
-        </div>
+        </section>
+        <!-- TODO: inverser populaires et hébergements, fond blanc pour hébergements -->
         <div id="hebergements" class="hebergements-and-populaires">
           <section class="hebergements">
             <h2 class="section-title">Hébergements à Marseille</h2>
@@ -364,6 +365,47 @@
         </div>
         <section id="activites" class="activites section-title">
           <h1>Activités à Marseille</h1>
+          <div class="groupe-cards-actv">
+            <div class="card-actv">
+              <img
+                src="./images/activites/reno-laithienne.jpg"
+                alt="Image du Vieux Port de Marseille"
+              />
+              <div class="card-actv-contenu">
+                <p>Vieux-Port</p>
+              </div>
+            </div>
+
+            <div class="card-actv">
+              <img
+                src="./images/activites/paul-hermann.jpg"
+                alt="Image du Port de Pomègues"
+              />
+              <div class="card-actv-contenu">
+                <p>Port de Pomègues</p>
+              </div>
+            </div>
+
+            <div class="card-actv">
+              <img
+                src="./images/activites/kilyan-sockalingum.jpg"
+                alt="Image du Parc National des Calanques"
+              />
+              <div class="card-actv-contenu">
+                <p>Parc National des Calanques</p>
+              </div>
+            </div>
+
+            <div class="card-actv">
+              <img
+                src="./images/activites/florian-wehde.jpg"
+                alt="Image de la Notre-Dame-de-la-Garde"
+              />
+              <div class="card-actv-contenu">
+                <p>Notre-Dame-de-la-Garde</p>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
       <footer></footer>
