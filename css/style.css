@@ -46,7 +46,6 @@ header {
 
 #logo {
   width: 80px;
-  height: fit-content;
   margin-top: 40px;
 }
 
@@ -575,6 +574,14 @@ footer li {
   .populaires {
     background-color: var(--main-bg-color);
     margin-top: 0;
+  }
+
+  .populaires-cards {
+    flex-direction: column;
+  }
+
+  .populaires-cards a {
+    width: 100%;
   }
 
   .rangee-dessus,
